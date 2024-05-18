@@ -120,13 +120,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^/s@]+@[^/s@]+/.[^/s@]+$/;
         return emailRegex.test(email);
     }
 
     function isValidPhoneNumber(phoneInput) {
         const phoneNumber = phoneInput.value;
-        return /^\d{10}$/.test(phoneNumber);
+        return /^/d{10}$/.test(phoneNumber);
     }
 
     function resetForm() {

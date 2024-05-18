@@ -314,7 +314,7 @@ const setSuccess = element => {
 
 function isValidEmail(email) {
     // Use a regular expression to validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^/s@]+@[^/s@]+/.[^/s@]+$/;
     return emailRegex.test(email);
 }
 
@@ -337,7 +337,7 @@ async function getCurrentEmail(employeeId) {
 }
     function isValidPhone(phone) {
         // Phone number must contain exactly ten digits
-        const phoneRegex = /^\d{10}$/;
+        const phoneRegex = /^/d{10}$/;
         return phoneRegex.test(phone);
     }
     const displayPleaseWaitMessage = () => {

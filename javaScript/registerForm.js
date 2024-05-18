@@ -211,7 +211,7 @@ document.getElementById("registrationForm").addEventListener("submit", async fun
 });
 
 function validateURL(url) {
-    const urlPattern = /^https:\/\/maps\.app\.goo\.gl\/.*$/;
+    const urlPattern = /^https:////maps/.app/.goo/.gl//.*$/;
 
     const isValidURL = urlPattern.test(url);
 
