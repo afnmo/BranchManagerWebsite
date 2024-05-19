@@ -193,7 +193,7 @@ const setSuccess = element => {
 };
 
 const isValidEmail = email => {
-    const regx = /^(([^<>()[/]//.,;:/s@"]+(/.[^<>()[/]//.,;:/s@"]+)*)|(".+"))@((/[[0-9]{1,3}/.[0-9]{1,3}/.[0-9]{1,3}/.[0-9]{1,3}/])|(([a-zA-Z/-0-9]+/.)+[a-zA-Z]{2,}))$/;
+    const regx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regx.test(String(email).toLowerCase());
 }
 
@@ -214,8 +214,8 @@ const validateInputs = () => {
     // Regular expressions to match different password criteria
     const lowerCaseRegex = /[a-z]/;
     const upperCaseRegex = /[A-Z]/;
-    const digitRegex = //d/;
-    const specialCharRegex = /[!@#$%^&*()_+{}/[/]:;<>,.?~//-]/;
+    const digitRegex = /\d/;
+    const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/;
 
 
     // Check if all criteria are met
